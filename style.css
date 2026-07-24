@@ -1,0 +1,121 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #263455; /* Màu nền tối hiện đại */
+    color: #eff2f5;
+    line-height: 1.6;
+}
+
+/* header */
+header{
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #3a3a3a, #1f2023);
+    border-bottom: 1px solid #15202e;
+
+    background-image: linear-gradient(
+        rgba(15, 23, 42, 0.75), 
+        rgba(15, 23, 42, 0.85)
+    ), url('https://cellphones.com.vn/sforum/wp-content/uploads/2022/03/1-43.jpg');
+}
+header h1 {
+    font-size: 3.5rem;
+    color: #c84343;
+    margin-bottom: 10px;
+}
+header p{
+    font-size: 3.0rem;
+    color: #e8ecf2;
+    
+}
+
+.collection-container{
+    font-size:2.5rem;
+    max-width: 4500px;
+    margin: 100px auto;
+    padding: 10px 20px;
+    display: flex;
+    /* Tự động chia cột linh hoạt (Responsive) */
+    flex-direction: row;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    justify-content: center
+}
+
+/* Thẻ Card */
+.card{
+    flex:1;
+    background-color: #1e293b;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hiệu ứng khi rê chuột vào Card */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(56, 189, 248, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 790px;
+    object-fit: cover;
+}
+.card-content {
+    padding: 25px;
+}
+.tag {
+    display: inline-flex;
+    font-size: 2.0rem;
+    background-color: #0284c7;
+    color: white;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card-content h3 {
+    font-size: 3.3rem;
+    color: #f8fafc;
+    margin-bottom: 8px;
+}
+
+.description {
+    text-align: justify;
+    font-size: 3.0rem;
+    color: #94a3b8;
+    margin-bottom: 15px;
+}
+
+/* Trích dẫn trích đoạn phim */
+.quote {
+    border-left: 3px solid #38bdf8;
+    padding-left: 12px;
+    font-style: italic;
+    color: #cbd5e1;
+    font-size: 2.5rem;
+    background-color: #0f172a;
+    padding: 8px 12px;
+    border-radius: 0 6px 6px 0;
+}
+/* Footer */
+footer {
+    font-size:3rem;
+    text-align: center;
+    padding: 100%;
+    color: #cccdce;
+    border-top: 4px solid #080c12;
+    margin-top: 20px;
+
+    background-image: linear-gradient(
+        rgba(15, 23, 42, 0.75), 
+        rgba(15, 23, 42, 0.85)
+    ), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOzVTgGI1cS4qEh16ygpKnjTqZ-U5_oyazGVnFyhLJFQ&s=10');
+}
